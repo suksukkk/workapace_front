@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--한글로표시-->
+<html lang="ko">
+
+    <head>
+        <!-- utf-8은 한글이 안깨진다라는뜻-->
+        <meta charset="UTF-8">
+        <title>html5 공부하기</title>
+    </head>
+
+    <body>
+        <h1>html5공부</h1>
+        <h2>form요소-input(text, password, button )</h2>
+
+        <!--for="txt-id  창옆에 아이디글씨를누르면 창안에 커서가 감
+            id="txt-id"-->
+        <!--텍스트 바(창)  텍스트 창 안에  id 표시-->
+        <!--input type="text"  placeholder="id"
+        -->
+        <!--method= get(바로나타남) , post(숨겨서)방식이 있음-->
+        <form action="" method="get">
+            <label for="txt-id">아이디</label>
+            <input id="txt-id" type="text" placeholder="id" name="id" value="">
+            <br>
+            <label for="txt-pw">패스워드</label>
+            <input id="txt-pw" type="password" placeholder="password" name="pw" value="">
+            <br>
+            <button type="submit">로그인</button><br>
+            <button type="reset">초기화</button><br>
+        </form>
+
+
+        <br><br>
+        <!-------------------------------------->
+        <!--끝나는 태그가 없어서 이미지 추가불가-->
+        <input type="button" value="우편번호찾기"><br>
+        <input type="submit" value="로그인"><br>
+        <input type="reset" value="초기화"><br>
+        <br><br>
+        <!--끝나는태그가 있어서 이미지 추가가능
+         굳이 인풋을쓰진 않음 확장성 좋은 버튼을쓸거임-->
+        <!--submit(전송)-->
+        <button type="button">우편번호찾기</button><br>
+        <button type="submit">로그인</button><br>
+        <button type="reset">초기화</button><br>
+
+        <!-------------------------------------->
+        <br><br>
+        <input type="number"><br>
+        <input type="email"><br>
+        <input type="date"><br>
+        <input type="color">
+        
+
+    </body>
+
+</html>
