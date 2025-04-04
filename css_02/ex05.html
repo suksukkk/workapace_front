@@ -7,17 +7,21 @@
         <!-- 스타일시트자리 -->
 
         <style>
-            table>thead>tr{
-                background-color: #d5d5d5;
-            }
-            
-            th{
-                border-top: 1px solid #000000;
-                border-bottom: 1px solid #000000;
+            table{ /*여백(경계)없애주기*/
+                border-collapse: collapse;                
             }
 
-            tbody{
-                border-bottom: 1px solid #000000;
+            table>thead{ 
+                background-color: #d5d5d5;
+            }
+
+            table>thead>tr{
+                border-top: 2px solid #000000;
+                border-bottom: 2px solid #000000;
+            }
+
+            table>tbody>tr{
+                border: 1px dotted #000000;
             }
 
             tr{
@@ -28,9 +32,32 @@
                 background-color: #ffff00;
             }
 
-            td{
-                border-bottom: 1px dotted #000000;
+            /*tr에클레스네임주고*/
+            /*
+            .tr-6{
+                border-bottom: 2px solid #000000;
             }
+            */
+            
+            /*여러개의tr중마지막tr*/
+            table>tbody>tr:last child{ 
+                border-bottom: 2px solid #000000;
+            }
+
+            table>tbody>tr:nth-child(2n-1){
+                background-color: aqua;
+            }
+
+            /*
+            tbody>tr:first child {background color: #ff0000;}
+
+            tbody>tr:last child {background color: #00ff00;}
+                    (여러개중 마지막만)
+            tbody>tr:nth child (3){background color: #0000ff;}
+            
+            tbody>tr:nth child (2n 1){background color: #0000ff;}
+            */
+
 
            
 
@@ -108,7 +135,7 @@
                     <td>삭제</td>
                 </tr>
                                 
-                <tr>                    
+                <tr class="tr-6">                    
                     <td>123</td>
                     <td>
                         <a href="">게시판 게시글입니다.</td></a>

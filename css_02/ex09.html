@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+         <style>
+            /*css에서는 이미지사진넣을때 장판같은 밑에 아이임*/
+            .bg-img{
+                width: 2000px;
+                height: 700px;
+                /*
+                background-color: #ff0000;
+                background-image: url(./img/flower.jpg);
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: fixed;
+                */
+
+                background: #ff0000 url(./img/flower.jpg) no-repeat fixed top left;
+            }
+         </style>
+    </head>
+
+    <body>
+        <div>
+            <img src="./img/flower.jpg">
+            이쁜 그림입니다.
+        </div>  
+        <br>
+
+        <div class="bg-img">
+            이쁜 그림입니다.
+        </div>      
+
+    </body>
+
+</html>
