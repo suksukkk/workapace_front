@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* 초기화 순서대로 모아두면 더편하고 좋은코드임*/
+body, div,
+ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, 
+form, input, select, fieldset, legend,
+textarea, button,
+p, table, th, td, tr {
+    margin: 0; padding: 0;
+}
+/* *{    전체초기화
+    margin: 0px;
+    padding: 0px;
+} */
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕"; 
+    font-size: 12px;
+}
+
+.wrap{   /*껍데기클레스에서 가로,배경을준거임*/
+    width: 700px;
+    background-color: #ffffff;
+}
+
+.wrap h3{   
+    font-size: 18px;
+    font-weight: bold;
+    /* border: 1px solid #000; */
+}
+
+/* 공통 */
+.form-group{   
+    margin-bottom: 10px;  
+    /* border: 1px solid #000; */
+}
+
+
+.form-group .form-title{
+    display: inline-block;
+    width: 80px;
+}
+
+/* 게시판선택 */
+.form-group #sel-board{
+    width: 200px;
+}
+/* 제목 */
+.form-group #txt-title{    
+    width: 600px;
+}
+/* 패스워드 */
+.form-group #txt-pwd{
+    width: 197px;
+}
+
+/* 공개범위 */ /* 허용범위 */
+.form-group input[type="radio"],
+.form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+/* 글내용 */
+.form-group textarea{
+    width: 685px;
+    height: 70px;
+}
+
+/* 첨부파일 */
+
+/* 버튼그룹 */
+.btn-group{
+    padding: 10px;
+    border-top: 1px solid #000;
+    text-align: center;    
+}
+
+.btn-group button{
+    width: 60px;
+    height: 30px;
+}
+
+
+ol>li{
+    list-style-type: none;   
+    float: left;     
+}
+
+ol>li::after{
+    content:">";     
+    padding: 0px 10px;                   
+}
+
+ol>li:last-child::after{  
+    content: "";
+}
