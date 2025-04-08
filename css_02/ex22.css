@@ -1,23 +1,37 @@
 
-body{
+body{    
     background-color: #808080;
     font-family: "맑은 고딕"; 
     font-size: 12px;
+
+}
+
+.wrap{
+    width: 700px;
+    background-color: #ffffff;
 }
 
 .form-group .form-title{    
     /* border-bottom: 1px solid #000; */
+    vertical-align: top;
+    
 }
 
 
 .form-group{   
     margin-bottom: 20px; 
-    padding-bottom: 10px ; 
+    padding-bottom: 10px; 
     border-bottom: 1px solid #000;
-    font-weight: ;
+   
 }
 
 .form-group .form-title{
     display: inline-block;
     width: 70px;    
 }
+
+.form-group textarea{
+    width: 400px;
+    height: 70px;    
+}
+
