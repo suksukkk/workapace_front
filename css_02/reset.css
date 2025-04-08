@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* 초기화 순서대로 모아두면 더편하고 좋은코드임*/
+body, div,
+ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, 
+form, input, select, fieldset, legend,
+textarea, button,
+p, table, th, td, tr {
+    margin: 0; padding: 0;
+}
+/* *{    전체초기화
+    margin: 0px;
+    padding: 0px;
+} */
+
+/*위에서주는대로 받는다(바디밑에있으니 바디껄 받는다)*/
+input, select, intextarea{ 
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* clearfix */
+
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}

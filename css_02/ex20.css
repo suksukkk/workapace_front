@@ -1,18 +1,4 @@
-@charset "UTF-8";
 
-/* 초기화 순서대로 모아두면 더편하고 좋은코드임*/
-body, div,
-ul, li, dl, dt, ol, 
-h1, h2, h3, h4, h5, h6, 
-form, input, select, fieldset, legend,
-textarea, button,
-p, table, th, td, tr {
-    margin: 0; padding: 0;
-}
-/* *{    전체초기화
-    margin: 0px;
-    padding: 0px;
-} */
 
 body{
     background-color: #808080;
@@ -31,6 +17,28 @@ body{
     /* border: 1px solid #000; */
 }
 
+/* 경로표시 */
+.wrap ol{
+    list-style-type: none; 
+    margin: 10px 0px 10px 0px;
+}
+
+
+.wrap ol>li{
+    float: left;    
+}
+
+.wrap ol>li{
+    float: left;
+}
+
+.wrap ol>li::after{
+    content: ">";
+    padding: 0px 5px 0px 5px;
+}
+
+
+
 /* 공통 */
 .form-group{   
     margin-bottom: 10px;  
@@ -41,6 +49,7 @@ body{
 .form-group .form-title{
     display: inline-block;
     width: 80px;
+    vertical-align: top;  /*글자상단에배치 */
 }
 
 /* 게시판선택 */
@@ -64,8 +73,8 @@ body{
 
 /* 글내용 */
 .form-group textarea{
-    width: 685px;
-    height: 70px;
+    width: 400px;
+    height: 70px;    
 }
 
 /* 첨부파일 */
@@ -82,17 +91,7 @@ body{
     height: 30px;
 }
 
+/* clearfix */
 
-ol>li{
-    list-style-type: none;   
-    float: left;     
-}
-
-ol>li::after{
-    content:">";     
-    padding: 0px 10px;                   
-}
-
-ol>li:last-child::after{  
-    content: "";
-}
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}

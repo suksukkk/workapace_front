@@ -5,6 +5,7 @@
         <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
+        <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./ex20.css">
     </head>
 
@@ -14,7 +15,7 @@
             <h3>일반게시판</h3>
 
             <div class="last-child">
-                <ol>
+                <ol class="clearfix">
                     <li>홈</li>
                     <li>게시판</li>
                     <li class="last">일반게시판</li>                          
@@ -80,8 +81,10 @@
                 </div>
                 <!--글내용-->
                 <div class="form-group">
-                    <textarea></textarea>
+                    <label for="txt-content" class="form-title">자기소개</label>
+                    <textarea id="txt-content"></textarea>
                 </div>
+
 
                 <!--첨부파일-->
                 <div class="form-group">
@@ -89,11 +92,17 @@
                     <input id="txt-file" type="file">
                 </div>
 
+
                 <div class="btn-group">
                     <button type="submit">등록</button>
                     <button type="reset">초기화</button>
                 </div>
 
+
+
+
+
+                
             </form>
             <!--//wrap-->
         </div>
