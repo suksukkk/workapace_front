@@ -41,7 +41,7 @@ body{
 }
 
 #content2 #main{
-    width: 798px;;
+    width: 798px;
     float: left;
     border: 1px solid #000;
 }
@@ -107,6 +107,8 @@ body{
     font-size: 15px;
     border: 1px solid #a6a6a6;
 }
+
+
 
 #main #main-head{
     padding: 15px 0px 10px 0px; 

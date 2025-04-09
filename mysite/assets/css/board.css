@@ -13,19 +13,27 @@
   float: right;
 }
 
-.table th{
-  
+#div-ta{
+  float: right;
+  margin-top: 10px;
+}
+
+table th{
+  /* width: 10px; */
   padding: 3px;  
   background-color: #808080; 
 }
 
-.table {
+table {  
   text-align: center;
+  border-collapse: collapse;
   
 }
 .txt-1{
  
 }
+
+
 
 /* /등록폼 */
 
@@ -34,3 +42,4 @@
 
 /* 읽기폼 */
 /* /읽기폼 */
+
