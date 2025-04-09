@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/**************************
+ * 전체초기화
+**************************/
+
 
 /* 초기화 순서대로 모아두면 더편하고 좋은코드임*/
 body, div,
@@ -27,4 +31,9 @@ input, select, intextarea{
 
 ol, li{
     list-style-type: none;
+}
+
+a{
+    text-decoration: none;  /*밑줄제거*/
+    color: inherit;         /*부모색상상속*/
 }

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/**************************
+ * Mysite 공통
+**************************/
+
 
 /* 레이아웃 *****************/
 body{
@@ -9,25 +13,42 @@ body{
 
 #wrap{
     width: 1000px;
-    margin: 0px auto;
-    /* border: 1px solid #000; */
+    margin: 0px auto;    
 }
 
 #header{    
     padding: 10px 0px 10px 0px;
-    /* border: 1px solid #000; */
+    border-bottom: 1px solid #585858;    
 }
 
-#nav{    
-    border: 1px solid #000;
+#nav{
+    padding: 10px 0px 10px 0px;   
+    border-bottom: 1px solid #585858;     
 }
 
-#content{    
+#content{    /* 1단 */
+    padding: 20px 20px 20px 20px;    
+}
+
+#content2{   /* 2단 */
+    padding: 20px 0px 20px 0px;
+}
+
+#content2 #aside{
+    width: 180px;
+    margin-right: 20px;
+    float: left;    
+}
+
+#content2 #main{
+    width: 798px;;
+    float: left;
     border: 1px solid #000;
 }
 
 #footer{   
-    border: 1px solid #000;
+    padding: 10px 0px 10px 0px;
+    background-color: #dddddd;
 }
 /* /레이아웃 *****************/
 
@@ -54,10 +75,77 @@ body{
     background-color: #e3e3e3;
     border: 1px solid #c0c0c0;    
 }
+/* 해더관련 ******************/
 
-a{
-    text-decoration: none; /*밑줄제거*/
-    color: inherit;        /*부모색상상속*/
+/* 네비 *********************/
+
+#nav ul>li{
+    width: 250px;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+/* /네비 *********************/
+
+
+/* 컨텐츠2(게시판리스트) ******/
+#aside h2{
+    width: 180px;
+    height: 60px; /*line-height: 60px;두개가*/
+    line-height: 60px; /*같은숫자로바꿔야함 다르면 중간으로안옴*/
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center;
+    background-color: #dddddd;
 }
 
-/* 해더관련 ******************/
+#aside ul>li{
+    padding: 8px 10px 8px 10px;
+    margin: 5px 0px 0px 0px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+}
+
+#main #main-head{
+    padding: 15px 0px 10px 0px; 
+    border: 1px solid #000;      
+}
+
+#main #main-head h3{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+#main #main-head ol{
+    float: right;   
+    margin-top: 10px ;
+}
+
+
+#main #main-head ol>li{
+    float: left;    
+}
+
+#main #main-head ol>li::after{
+    content: ">";
+    padding: 0px 3px 0px 3px;
+}
+
+#main #main-head ol>li:last-child::after{
+    content: "";
+    padding-right: 0px;
+}
+
+
+/* /컨텐츠2(게시판리스트) ******/
+
+/* 푸터 *********************/
+#footer p{
+    text-align: center;
+}
+/* /푸터 *********************/
+
+
