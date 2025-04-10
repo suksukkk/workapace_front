@@ -25,7 +25,6 @@ input, select, intextarea{
 }
 
 /* clearfix */
-
 .clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
 .clearfix::after {clear: both;}
 
