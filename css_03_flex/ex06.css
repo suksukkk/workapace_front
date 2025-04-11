@@ -1,0 +1,39 @@
+@charset "UTF-8";  
+
+.container{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+}
+
+.container.row{
+    display: flex;     /*종족변경*/
+    flex-direction: row; /*주측변경*/
+    justify-content: flex-start; /*주측에서시작*/
+    align-items: flex-start; /*보조측에서시작*/
+}
+
+.container.column{
+    display: flex; /*종족변경*/
+    flex-direction: column; /*주측변경*/
+    justify-content: flex-start;/*주측에서시작*/
+    align-items: flex-start; /*보조측에서시작*/
+}
+
+
+.item1{
+    border: 3px solid red;
+    align-self: flex-end; /*아이템1만 끝으로*/
+}
+
+.item2{
+    border: 3px solid #0000ff;
+    /* align-self: stretch; 아이템2만 꽉채움*/
+    /*align-self: flex-end; 아이템2만 맨아래로*/
+}
+
+.item3{
+    border: 3px solid #00ff00;
+    align-self: stretch; /*아이템3만 꽉채움*/
+}

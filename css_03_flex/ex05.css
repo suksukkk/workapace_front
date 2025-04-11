@@ -1,0 +1,38 @@
+@charset "UTF-8";  
+
+.container{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+}
+
+.container.row{
+    display: flex;       /*종족변경*/
+    flex-direction: row; /*주측변경*/
+    justify-content: flex-start;/*주측에서시작*/
+    align-items: flex-start;/*보조측에서시작*/
+}
+
+.container.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* **(기본값은0)order: 1;2;3;은 아이템들의 순서를바꿔줌 */
+.item1{
+    border: 3px solid red;
+    order: 3;
+}
+
+.item2{
+    border: 3px solid #0000ff;
+    order: 2;
+}
+
+.item3{
+    border: 3px solid #00ff00;
+    order: 1;
+}

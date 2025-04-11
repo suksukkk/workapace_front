@@ -1,0 +1,50 @@
+@charset "UTF-8";  
+
+.container{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+}
+
+.container.row{
+    display: flex;     /*종족변경*/
+    flex-direction: row; /*주측변경*/
+    justify-content: flex-start; /*주측에서시작*/
+    /* align-items: flex-start; 보조측에서시작 */
+
+    /*flex-wrap: wrap-reverse; 넘치면 아래부터위로 채워줌*/
+    flex-wrap: wrap; /*넘치면 아래로떨어트려줘*/
+        
+    /* align-content: flex-start; 아이템1그룹이 넘쳐서 떨어트린걸 시작점에서합쳐라 */
+    /* align-content: flex-end; 아이템1그룹이 넘쳐서 떨어트린걸 끝에서합쳐라*/
+    /* align-content: center;아이템1그룹이 넘쳐서 떨어트린걸 중간에서합쳐라 */
+    /* align-content: space-between; */
+    align-content: stretch;
+
+}
+
+.container.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    align-items: stretch;
+
+    /*flex-wrap: wrap-reverse; 넘치면 아래부터위로 채워줌*/
+    flex-wrap: wrap;/*넘치면 옆으로배치*/
+
+    align-content: flex-start;
+}
+
+
+.item1{
+    border: 3px solid red;
+}
+
+.item2{
+    border: 3px solid #0000ff;
+}
+
+.item3{
+    border: 3px solid #00ff00;
+}

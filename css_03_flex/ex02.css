@@ -1,0 +1,41 @@
+@charset "UTF-8";  
+
+.container{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+}
+
+.container.row{ 
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start;  처음왼쪽끝*/ 
+    /* justify-content: flex-end;  마지막오른쪽끝*/
+    /* justify-content: center; 중간*/
+    justify-content: space-between;
+}
+
+
+.container.column{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; 주측에서스타트 처음위쪽*/
+    /* justify-content: flex-end; 주측에서스타트 처음아래끝쪽*/
+    /* justify-content: center; 주측에서스타트 중간쪽*/
+    justify-content: space-between;
+
+}
+
+
+.item1{
+    border: 3px solid red;
+}
+
+.item2{
+    border: 3px solid #0000ff;
+}
+
+.item3{
+    border: 3px solid #00ff00;
+}
