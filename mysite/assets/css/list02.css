@@ -1,18 +1,25 @@
 @charset "UTF-8";
 
-
+.labelbox{
+    /* background-color: red; */
+    
+    width: 100%;
+    
+   
+}
 
 .labelname{
     /* background-color: aqua; */
     display: inline-block;
-    width: 40px;
+    width: 6%;
     margin-top: 3px;
 }
 
 .inputbox{
     /* background-color: blue; */
-    width: 745px;
+    width: 92%;
     height: 25px;
+    
 
 }
 
