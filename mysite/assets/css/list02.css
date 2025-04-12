@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+
+.labelname{
+    /* background-color: aqua; */
+    display: inline-block;
+    width: 40px;
+    margin-top: 3px;
+}
+
+.inputbox{
+    /* background-color: blue; */
+    width: 745px;
+    height: 25px;
+
+}
+
+.ateabox{
+    width: 798px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.btnbox{
+    margin-top: 5px;
+    text-align: right;
+}
+
+.btnmt{    
+    width: 60px;
+    height: 25px;
+}
