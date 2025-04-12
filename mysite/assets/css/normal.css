@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.wrap{
+    margin-top: 15px;
+    border: 1px solid #000;
+    width: 798px;
+    height: 250px;
+}
+
+.tabletr1{
+    /* background-color: red; */
+    
+    height: 40px;
+}
+
+
+.tablename{  
+    /* background-color: blue; */
+    width: 50px;
+    padding-left: 2px;
+    
+}
+
+.tableinput{
+    /* background-color: blueviolet; */
+    height: 25px;
+    width: 97%;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.txtarea{
+    margin-top: 3px;
+    width: 98%;
+    height: 150px;
+}
+
+.tdyes{
+    height: 40px;
+}
+
+.btnyes{
+    width: 80px;
+    height: 27px;
+}
+
+.tablecss2{
+    margin-top: 30px;
+}
+
+.tablecss3{
+    margin-top: 10px;
+}
+
+.tablecss2 td, .tablecss3 td{
+    padding-left: 5px;
+}
+
+.tablecss{
+    border-collapse:collapse; 
+    width: 100%; 
+    /* border: 1px solid black; */
+    background-color: beige;
+
+}
+
+.tablecss td{
+    border: 1px solid black;
+}

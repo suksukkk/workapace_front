@@ -38,13 +38,34 @@ table tr{
 }
 
 .number{
-  width: 30px;
-  height: 250px;
-  text-align: center;
+  /* width: 30px; */
+  width: 300px;
+  /* height: 50px; */
+  /* text-align: center; */
   border: 1px solid #000;
   margin: 0px auto;
+  /* margin-left: 100px; */
 }
 
+.page{
+  /* margin-right: 200px ; */
+  margin-top: 10px;
+  /* ul, ol에서 text-align center를 할 경우 li들이 가운데 정렬로 모임 */
+  text-align: center; 
+}
+
+.page li {
+  width: 15px;
+  display: inline-block;
+  /* float: left; */
+}
+
+.btn{
+  float: right;
+  padding: 4px 7px; 
+  font-size: 10px;
+  /* font-weight: bold; */
+}
 
 /* /등록폼 */
 

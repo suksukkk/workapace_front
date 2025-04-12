@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.boxleft{
+    width:100%;    
+    /* background-color: blue; */
+}
+
+
+.labelbox{    
+    /* background-color: red; */
+    /* border: 1px solid black;     */
+    margin-top: 10px;
+}
+
+.labelL{
+    display: inline-block;
+    width: 60px;
+    /* background-color: beige;     */
+}
+
+.plist{
+    margin-top: 20px;
+    padding: 13px ;    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
