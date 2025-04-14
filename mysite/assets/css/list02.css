@@ -3,7 +3,7 @@
 .labelbox{
     /* background-color: red; */
     
-    width: 100%;
+    /* width: 100%; */
     
    
 }
@@ -11,13 +11,13 @@
 .labelname{
     /* background-color: aqua; */
     display: inline-block;
-    width: 6%;
+    width: 55px;
     margin-top: 3px;
 }
 
 .inputbox{
     /* background-color: blue; */
-    width: 92%;
+    width: 734px;
     height: 25px;
     
 
