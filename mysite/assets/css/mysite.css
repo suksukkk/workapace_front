@@ -113,6 +113,7 @@ body{
 #main #main-head{
     padding: 15px 0px 10px 0px; 
     border-bottom: 1px solid #000;      
+    margin-bottom: 15px;
 }
 
 #main #main-head h3{

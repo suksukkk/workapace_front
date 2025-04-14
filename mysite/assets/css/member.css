@@ -3,38 +3,53 @@
 
 .wrap{
     width: 500px;
-    height: 280px;
+    height: 300px;
     margin: 10px 0px 0px 150px;
     border: 1px solid #000;
+    /* text-align: center; */
+}
+
+
+.listcss{
+    
+    /* background-color: blue;    */
+    /* display: inline-block; */
+    margin-top: 20px;
+}
+
+.labelcss{
+    width: 35%;   
+    /* height: 34px; */
+    margin-right: 15px;
+    display: inline-block;
+    /* background-color: red; */
+    text-align: right;
+}
+
+.inputcss{
+    border-radius: 4px;
+    height: 24px;
+    font-size: 12px;
+    /* margin ; */
+}
+
+.btncss{    
+    border-radius: 4px;
+    
+}
+
+.joincss{
+    /* background-color: blue; */
     text-align: center;
-}
-
-.txt-name{
-    
-    border: 1px solid #000;
-    
-}
-
-.txt-box1{
     margin-top: 35px;
+    
 }
 
-.txt-box{    
-    width: 130px;
-    height: 23px;
-    margin-top: 15px;   
+.btnjoin{
+   padding: 3px;
+   /* background-color: red; */   
 }
 
-.mg{
-    margin-top: 15px;
+#footer{
+    float: bottom;
 }
-
-.yes{
-    margin-top: 15px;
-}
-
-.memb{
-    margin-top: 30px;
-}
-
-
